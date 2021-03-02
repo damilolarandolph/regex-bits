@@ -1,0 +1,32 @@
+{
+  "name": "regex-bits-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "frontend-dev": "cd regex-bits-frontend && next dev",
+    "frontend-build": "cd regex-bits-frontend && next build",
+    "app-start": "npm run frontend-start && npm run backend-start",
+    "frontend-start": "cd regex-bits-frontend && next start",
+    "backend-start": "cd regex-bits-backend && ts-node server.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "10.0.7",
+    "pg": "^8.5.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.2.31"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^8.0.29",
+    "autoprefixer": "^10.2.4",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  }
+}
