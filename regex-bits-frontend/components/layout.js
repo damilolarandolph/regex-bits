@@ -1,5 +1,8 @@
-import React from 'react'
-import SearchBar from './search'
+import React from 'react';
+import { BiCodeBlock, BiHome, BiUser } from 'react-icons/bi';
+import { NavButton } from './buttons';
+import SearchBar from './search';
+import * as style from '../styles/Layout.module.css';
 
 
 export default function Layout() {
@@ -7,7 +10,11 @@ export default function Layout() {
         <div>
             <Navbar />
         </div>
-        <div className="flex"></div>
+        <div className="flex">
+            <div>
+                <Sidebar />
+            </div>
+        </div>
     </div>
 }
 
@@ -25,7 +32,7 @@ function Navbar() {
 
 
 function Logo() {
-    return <div>Placeholder</div>
+    return <div className="ml-5">Placeholder</div>
 }
 
 
@@ -38,3 +45,14 @@ function ProfileSection() {
         </div>
     </button>
 }
+
+function Sidebar() {
+    return <nav className={style.sidebar}>
+        <ol>
+            <li><NavButton selected={true} icon={<BiHome />} text="Home" /></li>
+            <li><NavButton icon={<BiCodeBlock />} text="Editor" /></li>
+            <li><NavButton icon={<BiUser />} text="Profile" /></li>
+        </ol>
+    </nav>
+}
+

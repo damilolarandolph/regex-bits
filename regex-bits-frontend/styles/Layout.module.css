@@ -1,0 +1,7 @@
+.sidebar li {
+  @apply my-5;
+}
+
+.sidebar {
+  @apply px-7;
+}
