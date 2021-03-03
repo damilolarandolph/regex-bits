@@ -1,0 +1,7 @@
+.navbar-button {
+  @apply flex items-center justify-between px-2 py-3 text-xl font-medium duration-300 rounded-md w-28 text-ui-black hover:bg-ui-grey;
+}
+
+.navbar-button.selected {
+  @apply bg-ui-black text-white font-semibold;
+}
