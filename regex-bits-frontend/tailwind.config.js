@@ -26,7 +26,8 @@ module.exports = {
   },
   variants: {
     extend: {
-
+      display: ["group-focus"],
+      ringWidth: ["group-focus"]
     },
   },
   plugins: [],
