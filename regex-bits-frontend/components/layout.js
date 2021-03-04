@@ -5,14 +5,19 @@ import SearchBar from './search';
 import * as style from '../styles/Layout.module.css';
 
 
-export default function Layout() {
+export default function Layout({ children }) {
     return <div className="flex flex-col h-screen bg-ui-white">
         <div>
             <Navbar />
         </div>
-        <div className="flex">
+        <div className="flex ">
             <div>
                 <Sidebar />
+            </div>
+            <div className="w-full px-5 mt-5 ">
+
+                {children}
+
             </div>
         </div>
     </div>
